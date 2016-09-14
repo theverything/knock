@@ -5,6 +5,13 @@
     </head>
     <body>
         <img src="http://i.imgur.com/4AiXzf8.jpg" alt="cat" />
-        <audio src='https://raw.githubusercontent.com/theverything/knock/master/knock.mp3' loop autoplay></audio>
+      <script>
+        var k = new Audio('https://raw.githubusercontent.com/theverything/knock/master/knock.mp3')
+         k.loop = true;
+
+         setTimeout(function () {
+          k.play();
+         }, 1500);
+      </script>
     </body>
 </html>
